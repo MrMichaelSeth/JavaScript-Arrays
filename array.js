@@ -14,7 +14,7 @@ for ( let i = 0; i < scoresLength; i++) {
 console.log(scores);
 
 
-let main;
+let main = '';
 for ( let i = 0; i < scores.length; i++) {
     main += `Score: ${scores[i]} <br>`;
 }
