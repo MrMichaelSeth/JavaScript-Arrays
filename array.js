@@ -45,3 +45,16 @@ for ( let i = 0; i < scores.length; i++)  {
 // Calculate the average and display to webpage
 let avg = total / scores.length; 
 document.getElementById("output").innerHTML += `average score: ${avg}<br>`;
+
+//Create an array to hold scores 70+
+let seventyPlus = [];
+
+//Loop through score array and pull out every 70+ score
+for ( let i = 0; i < scores.length; i++)  {
+    if (scores[i] > 70 ) {
+        seventyPlus.push(scores[i]);
+    }
+}
+
+//Display seventyPlus to the webpage 
+document.getElementById("output").innerHTML += `The # of scores over 70: ${seventyPlus.length}<br>`;
