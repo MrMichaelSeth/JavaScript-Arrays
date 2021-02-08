@@ -6,7 +6,7 @@ Create a variable that displays number of students and print on webpage
 Print number of studnets to webpage before grades on a new line 
 */
 
-/* Generates random numbers and assigns to scores array*/
+// Generates random numbers and assigns to scores array
 let scores = [ ];
 let scoresLength = 20; 
 for ( let i = 0; i < scoresLength; i++) {
@@ -14,17 +14,17 @@ for ( let i = 0; i < scoresLength; i++) {
 }
 console.log(scores);
 
-/* Built the scorces string */
+// Built the scorces string 
 let main = '';
 for ( let i = 0; i < scores.length; i++) {
     main += `Score: ${scores[i]} <br>`;
 }
 
-/* Displays scores to the webpage*/
+// Displays scores to the webpage
 document.getElementById("output").innerHTML = main;
 document.getElementById("output").innerHTML += `# of scores: ${scores.length}<br>`;
 
-/* Find highest and lowest number */
+// Find highest and lowest number 
 let lowest = 101
 let highest = 0; 
 for ( let i = 0; i < scores.length; i++)  {
@@ -32,7 +32,7 @@ for ( let i = 0; i < scores.length; i++)  {
     if(scores[i]<lowest){lowest = scores[i]}
 }
 
-/* Displays scores to the webpage*/
+// Displays scores to the webpage 
 document.getElementById("output").innerHTML += `highest score: ${highest}<br>`;
 document.getElementById("output").innerHTML += `lowest score: ${lowest}<br>`;
 
